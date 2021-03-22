@@ -1,0 +1,24 @@
+﻿@model HomeViewModel
+
+<link rel="stylesheet" href="~/css/site.css" />
+@*@await Html.PartialAsync("Carousel1")*@
+<div class=" text-center ">
+    <p class="text-center"><h1>BookiFy At Your Service</h1></p>
+</div>
+<br />
+<div class="container , align-content-center">
+    <img src="~/Images/SliderImage1.jpg" class="align-content-end" alt="">
+    
+    <a class="button1" 
+       asp-controller="Item"
+       asp-action="List"
+      >Shop now</a>
+</div>
+
+    
+@*<div class="row">
+    @foreach (var item in Model.InStock)
+    {
+        @Html.Partial("ItemSummary", item)
+    }
+</div>*@
